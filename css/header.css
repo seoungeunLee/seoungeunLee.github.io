@@ -1,0 +1,145 @@
+
+
+
+header{
+  width: 100%;
+  padding: 10px 20px 5px 20px;
+  position: relative;
+  border-bottom: 1px solid #4A4E8C;
+}
+
+header::after{
+  content: '';
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+header h1.home{
+  width: 150px;
+  height: 50px;
+  float: left;
+  background-color: #9A9DD9;
+}
+
+header div.translation,
+header label{
+  float: right;
+}
+
+
+/* *on off btn */
+header div.translation{
+  width: 60px;
+  padding-top: 10px;
+}
+
+header div.translation div.box{
+  width: 100%;
+  height: 30px;
+  border-radius: 35px;
+  padding: 4px;
+  background-color: #fff;
+  border: 2px solid #9A9DD9;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+  position: relative;
+  cursor: pointer;
+}
+
+header div.translation div.box.on{
+  border: 2px solid #4A4E8C;
+  background-color: #4A4E8C;
+}
+
+header div.translation div.box:hover{
+  background-color: #f1f1f1;
+}
+
+header div.translation div.box.on:hover{
+  background-color: #9A9DD9;
+}
+
+header div.translation div.box span.button{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 35px;
+  position: absolute;
+  left: 3px;
+  top: 10%;
+  background-color: #9A9DD9;
+  /* box-shadow: 0px 0px 3px rgba(000, 000, 000, 0.5); */
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+header div.translation div.box span.button b{
+  font-size: 10px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: none;
+}
+
+header div.translation div.box span.button.on b#off{
+  display: none;
+}
+
+header div.translation div.box span.button.on b#on{
+  display: block;
+}
+
+header div.translation div.box span.button b.active{
+  display: block;
+  color: #fff;
+}
+
+
+header div.translation div.box span.button.on b.active{
+  color: #010326;
+}
+
+header div.translation div.box span.button.on{
+  position: absolute;
+  left: 33px;
+  background-color: #fff;
+}
+
+input[type="checkbox"],label[for="menu"]{
+  display: none;
+}
+
+header nav{
+  float: right;
+  margin-right: 30px;
+}
+
+header nav div.wrap ul::after{
+  content: '';
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+header nav div.wrap ul>li{
+  float: left;
+  margin-left: 20px;
+  line-height: 50px;
+}
+
+header nav div.wrap ul>li a{
+  display: block;
+  font-size: 1em;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 800;
+  color: #010326;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+header nav div.wrap ul>li:hover a{
+  color: #4A4E8C;
+}
